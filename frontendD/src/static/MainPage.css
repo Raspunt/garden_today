@@ -20,10 +20,7 @@
 }
 
 
-body{
-    margin: 0;
-    padding: 0;
-}
+
 
 
 .project_info{
@@ -37,6 +34,8 @@ body{
 
 body{
     background-color: rgba(0, 63, 73, 0.1);
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -82,10 +81,9 @@ body{
 
     width: 500px; 
     height: auto;
-    background-color: #2C3441;
+    background-color:rgb(44, 52, 65,0.9) ;
     border-radius: 3rem;
     color: white;
-    word-break: break-all;
     padding: 20px;
 
 
@@ -94,6 +92,5 @@ body{
 
 
 .info_obj{
-
-    margin-top: 100px;
+    margin-top: 250px;
 }

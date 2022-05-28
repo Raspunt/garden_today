@@ -1,0 +1,61 @@
+
+
+
+.benifis_center_div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#2C3441 ;
+
+    height: 1000px;
+
+
+}
+
+.benifis_center_div h1 {
+    color: white;
+}
+
+
+.benefis_block{
+    width: 600px;
+    height: 650px;
+    background-color: #1c677a;
+    border-radius: 5rem;
+    color:white;
+    padding: 20px;
+
+}
+
+
+.benefis_text{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.green_dot{
+    color: rgb(255, 136, 0);
+}
+
+
+
+
+
+
+.benifis_blocks {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+
+.benifis_item{
+    margin: 10px;
+    padding: 150px;
+    font-size: 30px;
+    text-align: center;
+    background-color: chartreuse;
+}

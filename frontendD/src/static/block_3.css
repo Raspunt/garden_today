@@ -1,0 +1,39 @@
+
+
+.feedback_center_div{
+    display: flex;
+    justify-content: center;
+    background-color: #0E131F;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.feedback_center_div h1 {
+    color: white;
+}
+
+
+.rewiew_image {
+    background-image:url('../assets/smile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+.rewiew_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment_body {
+    width: 600px;
+    height: 100px;
+    color: white;
+    background-color:#003F49 ;
+    border-radius: 15rem;
+    padding: 30px;
+}
