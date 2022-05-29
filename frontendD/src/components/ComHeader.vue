@@ -9,9 +9,20 @@
         <h1>Garden Today</h1>
         </div>
 
-        <router-link  class="header_link" v-bind:to="linkUrl">{{linkName}}</router-link>
+        <div class="left_zone">
+            <router-link  class="header_link" v-bind:to="linkUrl">{{linkName}}</router-link>
+
+           
+         <div class="cart_place">
+             <router-link to="/cart">
+                 <i class="cart_img fa-solid fa-cart-shopping"></i>
+             </router-link>
+        </div>
 
         
+
+        </div>
+
     </header>
 
 </template>
@@ -45,6 +56,12 @@
                         this.linkName = "Главная страница";
                         this.linkUrl = "/";
                         break;
+                    
+                    default:
+                        this.linkName = "Главная страница";
+                        this.linkUrl = "/";
+                        break;
+
 
                 }
 
