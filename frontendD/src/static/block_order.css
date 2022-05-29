@@ -1,0 +1,33 @@
+
+
+.orders_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orders_block h1 {
+    color: white;
+}
+
+
+.order_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+
+
+}
+
+
+.order_item{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+    margin: 10px;
+    border-radius: 5rem;
+    width: 400px;
+    height: 300px;
+}

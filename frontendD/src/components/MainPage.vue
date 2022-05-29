@@ -66,6 +66,66 @@
     </div>
 
 
+    <div class="orders_block">
+
+        <h1>Полный комплекс услуг</h1>
+
+
+        <div class="order_grid">
+          <div class="order_item">
+            <p>
+              Уход за садом
+
+                  садовники
+                  уход за деревьями, кустарниками
+                  устройство и ремонт газонов
+                  лечение деревьев
+                  обработка от вредителей
+
+            </p>
+          </div>
+          <div class="order_item">
+              <p>
+                    
+                Озеленение
+
+                    посадка крупномеров
+                    посадка декоративных растений
+                    живые изгороди
+                    стрижки и обрезки
+
+              </p>
+          </div>
+          <div class="order_item">
+            <p>
+
+            Инженерные работы
+
+            системы автополива
+            дренажные системы
+            устройство водоемов
+
+            </p>
+
+
+          </div>
+          <div class="order_item">
+              <p>
+            Световое оформление
+
+                архитектурная подсветка
+                украшение коттеджей
+                украшение улиц
+                украшение коммерческих объектов
+              </p>
+
+
+          </div>
+        </div> 
+
+    </div>
+
+
     <div class="feedback_center_div">
       <h1>Отзывы</h1>
 
@@ -117,6 +177,7 @@ export default {
   @import '../static/MainPage.css';
   @import '../static/block_2.css';
   @import '../static/block_3.css';
+  @import '../static/block_order.css'
   
 
 </style>
