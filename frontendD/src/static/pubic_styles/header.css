@@ -107,3 +107,28 @@ body{
 .info_obj{
     margin-top: 250px;
 }
+
+.cart_img{
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(171, 197, 23);
+    padding: 10px;
+    border-radius: 15rem;
+    transition: 0.5s;
+
+}
+
+.cart_img:hover{
+    background-color:rgb(255, 187, 0) ;
+}
+
+
+
+.left_zone{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+
