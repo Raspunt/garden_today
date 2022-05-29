@@ -1,25 +1,17 @@
 <template>
   
-  <header class="header">
-
-    <img class="logo" src="../assets/logo_project2.png" alt="">
-    <h1>Garden Today</h1>
-    
-  </header>
+  <ComHeader/>
 
   <div class="header_bg">
 
     
     
-    <div >
-      
-
-
+    <div>
       
       <div class="project_info_flex">
           
           <div class="info_obj info">
-            <h1 class="info_text ">{{ info_description }}</h1>
+            <h1 class="info_text ">Инновационные услуги по выращиванию и удобрению растений</h1>
           </div>
 
         
@@ -101,9 +93,9 @@
 
             Инженерные работы
 
-            системы автополива
-            дренажные системы
-            устройство водоемов
+              системы автополива
+              дренажные системы
+              устройство водоемов
 
             </p>
 
@@ -118,9 +110,10 @@
                 украшение улиц
                 украшение коммерческих объектов
               </p>
-
-
           </div>
+
+          
+
         </div> 
 
     </div>
@@ -144,7 +137,12 @@
         <div class="rewiew_image"></div>
 
        <div class="comment_body">
-          ВСЁ СУПЕР. Заказ пришел быстро. Делал жене подарок. Всё замечательно, рада! Будем заказывать ещё и ещё.
+          Их очень много - большой выбор товаров,
+          демократичные цены, всё понятно в оформлении и оплате ,
+          очень доброжелательные и милые девушки - сотрудницы ( прямо как родные ! ),
+          замечательные консультанты,..наличие бонусов,
+          быстрая и очень аккуратная доставка,
+          частенько с вложенными милыми подарочками ( как приятно !! )....Спасибо !!
       </div>
       
     </div>
@@ -154,30 +152,32 @@
     </div>
 
 
+    <ComFooter/>
+
+
 
                 
 
 </template>
 
 <script>
+import ComHeader from "./ComHeader.vue";
+import ComFooter from "./ComFooter.vue";
 export default {
-  name: 'MainPage',
-
-  data(){
-    return{
-        info_description:"Инновационные услуги по выращиванию и удобрению растений",
-    }
-  }
-  
+    name: "MainPage",
+    data() {
+        return {};
+    },
+    components: { ComHeader, ComFooter }
 }
 </script>
 
 <style scoped>
 
-  @import '../static/MainPage.css';
-  @import '../static/block_2.css';
-  @import '../static/block_3.css';
-  @import '../static/block_order.css'
+  @import '../static/MainPage/block_2.css';
+  @import '../static/MainPage/block_rewiews.css';
+  @import '../static/MainPage/block_order.css';
+  
   
 
 </style>

@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(28, 34, 46);
 }
 
 .orders_block h1 {
@@ -14,7 +15,7 @@
 
 .order_grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto ;
     padding: 10px;
 
 
@@ -25,9 +26,10 @@
     font-size: 30px;
     text-align: center;
     justify-content: center;
-    background-color: green;
+    background-color: rgb(31, 90, 31);
     margin: 10px;
     border-radius: 5rem;
     width: 400px;
     height: 300px;
+    color: white;
 }
