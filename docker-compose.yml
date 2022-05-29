@@ -10,6 +10,8 @@ services:
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
       - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
       - garden_db:/var/lib/mysql/
     networks:
@@ -21,9 +23,9 @@ services:
     image: phpmyadmin
     restart: "no"
     ports:
-      - ${MYSQL_PORT}:80
+      - ${PMA_PORT}:80
     environment:
-      - PMA_HOST=mysql
+      - PMA_HOST=garden_mysql
     networks:
       - garden-network
 
