@@ -13,7 +13,7 @@ class Request
     public static function catch()
     {
         global $_SERVER;
-        self::$method = $_SERVER['REQUEST_URI'] ?? FALSE;
+        self::$uri = $_SERVER['REQUEST_URI'] ?? FALSE;
         self::$method = $_SERVER['REQUEST_METHOD'] ?? FALSE;
     }
 }
