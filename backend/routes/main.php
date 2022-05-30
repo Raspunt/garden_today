@@ -1,5 +1,3 @@
 <?php
 
-Route::get('/',function(){
-    echo 'hello';
-});
+Route::get('/',[\MainController::class, 'index']);
