@@ -47,13 +47,7 @@
             </h3>
         </div>
 
-       <div class="benefis_text">
-         <h3 class="green_dot">*</h3>
-            <h3>
-              Только официальный товар. Совершая покупки в Садовом центре Garden today, Вы всегда можете быть уверены, что защищены от подделок. Мы очень ответственно подходим к выбору поставщиков. Весь товар имеет необходимые сертификаты, подтверждающие его качество и безопасность. А на всю технику обязательно оформляется официальный гарантийный талон.
-            </h3>
-        </div>
-      </div>
+     </div>
 
     </div>
 
@@ -123,9 +117,8 @@
       <h1>Отзывы</h1>
 
 
-      <div class="rewiew_block">
+      <div class="rewiew_block" >
         <div class="rewiew_image"></div>
-
        <div class="comment_body">
           ВСЁ СУПЕР. Заказ пришел быстро. Делал жене подарок. Всё замечательно, рада! Будем заказывать ещё и ещё.
       </div>
@@ -163,12 +156,18 @@
 <script>
 import ComHeader from "./ComHeader.vue";
 import ComFooter from "./ComFooter.vue";
+
 export default {
     name: "MainPage",
     data() {
-        return {};
+        return {
+          listRewiews:[]
+        };
     },
-    components: { ComHeader, ComFooter }
+    components: { ComHeader, ComFooter },
+    
+    
+   
 }
 </script>
 
