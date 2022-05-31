@@ -5,9 +5,10 @@
     display: flex;
     width: 100%;
     background-color: #135f2a;
-    height: 100px;
+    height: 80px;
     justify-content: space-around;
     align-items: center;
+    margin-top: 0;
     
 }
 
@@ -69,8 +70,8 @@ body{
 
 .logo{
     
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 
 }
 

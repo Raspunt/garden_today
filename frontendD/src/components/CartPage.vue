@@ -33,7 +33,7 @@
         name:"CartPage",
         data(){
             return{
-
+                ProductIdList:[]
             }
         },
         components:{
