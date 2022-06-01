@@ -15,21 +15,18 @@
  
 
 
-        <div class="item_browser_item" v-for="prod in BiItems" :key="prod">
+        <div class="item_browser_item" v-for="(prod,index) in BiItems" :key="index" >
             <div class="bi_img"></div>
             <h1>{{ prod['title'] }}</h1>
             <h1>{{prod['disc'] }}</h1>
-            <h1>{{prod['price'] }} в-баксов</h1>
-            <button @click="AddToCart(prod['id'])" class="bi_btn">Добавить в корзину</button>
-
+            <h1>{{prod['price'] }} тенге</h1>
+            <button @click="AddToCart(index)" v-bind:id="'btn_'+ index" class="bi_btn">Добавить в корзину</button>
         </div>
 
-       
 
-      
     </div>
     
-
+        
 
 
 </template>
@@ -50,7 +47,8 @@ export default {
         return {
             searchText:"",
             BiItems:[],
-            CartProductId:[]
+            CartProductId:[],
+            buttonReady:""
         }
 
     },
@@ -60,7 +58,7 @@ export default {
         
         SearchInput(){
             
-            let url = "http://192.168.1.22:5000/SearchProductByTitle"
+            let url = "http://localhost:5000/SearchProductByTitle"
             const _this = this;
 
             let form_data = new FormData();
@@ -79,12 +77,17 @@ export default {
 
         AddToCart(id){
 
+            // console.log(this.BiItems[id]);
             
-            this.CartProductId.push[id]
-            console.log(this.BiItems);
+            
+            if (this.CartProductId.indexOf(this.BiItems[id]) == -1){
+                this.CartProductId.push(this.BiItems[id]);
+                this.buttonReady += `btn_${id} `
 
-            if (this.CartProductId.includes(id) == false){
+                localStorage.setItem("CartButtons",this.buttonReady);
                 localStorage.setItem("CartProductId",JSON.stringify(this.CartProductId))
+                
+                document.getElementById(`btn_${id}`).innerHTML = "продукт добавлен в корзину"
 
             }
         }
@@ -93,21 +96,35 @@ export default {
 
     
     created(){
-        
-        let url = "http://192.168.1.22:5000/JsonProduct"
-        const _this = this;
+    
+    
 
+        let url = "http://localhost:5000/JsonProduct"
+        const _this = this;
 
         axios.get(url, {
         })
         .then(function (response) {
-            // console.log(response.data);
             _this.BiItems = response.data
         })
         .catch(function (error) {
             console.log(error);
         });
 
+
+        // let alreadyBtn = localStorage.getItem("CartButtons");
+
+        // let splitBtns = alreadyBtn.split(" ")
+
+        // splitBtns.forEach((el)=>{
+        //     console.log(el);
+        //     document.getElementById(el).innerHTML = "продукт добавлен в корзину"
+        // })
+
+
+
+
+    
     }
 
    

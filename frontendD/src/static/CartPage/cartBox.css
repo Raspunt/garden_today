@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -31,6 +32,7 @@
     border-radius: 15rem;
     align-items: center;
     justify-content: space-around;
+    margin: 10px;
 }
 
 .cart_box img {
@@ -40,8 +42,19 @@
     margin-left: 60px;
 }
 
-.cart_box h1 {
+.submit_btn{
+    padding: 20px;
+    border: none;
+
+    border-radius: 5rem;
+    background-color: greenyellow;
+    transition: 0.5s;
 }
+
+.submit_btn:hover{
+    background-color: orange;
+}
+
 
 
 
