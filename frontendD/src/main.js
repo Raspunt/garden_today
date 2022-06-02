@@ -8,6 +8,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { dom } from "@fortawesome/fontawesome-svg-core";
 
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 

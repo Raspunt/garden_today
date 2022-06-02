@@ -18,8 +18,8 @@
         <div class="item_browser_item" v-for="(prod,index) in BiItems" :key="index" >
             <div class="bi_img"></div>
             <h1>{{ prod['title'] }}</h1>
-            <h1>{{prod['disc'] }}</h1>
-            <h1>{{prod['price'] }} тенге</h1>
+            <small>{{prod['disc'] }}</small>
+            <h1>{{prod['price'] }} {{prod['currency']}}</h1>
             <button @click="AddToCart(index)" v-bind:id="'btn_'+ index" class="bi_btn">Добавить в корзину</button>
         </div>
 
@@ -58,7 +58,7 @@ export default {
         
         SearchInput(){
             
-            let url = "http://localhost:5000/SearchProductByTitle"
+            let url = `${process.env.VUE_APP_SERVER_URL}/SearchProductByTitle`
             const _this = this;
 
             let form_data = new FormData();
@@ -82,9 +82,7 @@ export default {
             
             if (this.CartProductId.indexOf(this.BiItems[id]) == -1){
                 this.CartProductId.push(this.BiItems[id]);
-                this.buttonReady += `btn_${id} `
 
-                localStorage.setItem("CartButtons",this.buttonReady);
                 localStorage.setItem("CartProductId",JSON.stringify(this.CartProductId))
                 
                 document.getElementById(`btn_${id}`).innerHTML = "продукт добавлен в корзину"
@@ -97,9 +95,7 @@ export default {
     
     created(){
     
-    
-
-        let url = "http://localhost:5000/JsonProduct"
+        let url = `${process.env.VUE_APP_SERVER_URL}/JsonProduct`
         const _this = this;
 
         axios.get(url, {

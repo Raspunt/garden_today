@@ -35,7 +35,7 @@ body{
 .item_browser_item{
     display: flex;
     background-color: grey;
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
     width: 300px;
     height: 350px;
@@ -43,6 +43,7 @@ body{
     flex-direction: column;
     padding: 10px;
     border-radius: 1rem;
+    color: white;
 }
 
 .item_browser_item h1 {
