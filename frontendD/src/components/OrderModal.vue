@@ -21,11 +21,11 @@
 
           <div v-for="prod in CartProductId" v-bind:key="prod">
           
-          <h3>{{ prod["title"] }} {{ prod['price']}}</h3>
+          <h3>{{ prod["title"] }} {{ prod['price']}} рублей</h3>
 
           </div>
 
-          <p>Итого {{sumProducts}}</p>
+          <p>Итого {{sumProducts}} рублей</p>
 
 
 
@@ -110,6 +110,7 @@ export default{
         .then(function (response) {
             console.log(response.data);
 
+            alert("Заказ успешно создан")
         })
         .catch(function (error) {
             console.log(error);

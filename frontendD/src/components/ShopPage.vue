@@ -19,7 +19,7 @@
             <div class="bi_img"></div>
             <h1>{{ prod['title'] }}</h1>
             <small>{{prod['disc'] }}</small>
-            <h1>{{prod['price'] }} {{prod['currency']}}</h1>
+            <h3>{{prod['price'] }} рублей {{prod['currency']}}</h3>
             <button @click="AddToCart(index)" v-bind:id="'btn_'+ index" class="bi_btn">Добавить в корзину</button>
         </div>
 

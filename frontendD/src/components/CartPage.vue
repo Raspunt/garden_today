@@ -11,9 +11,9 @@
             <h1>Ваш Заказ</h1>
       
             <div class="cart_order" v-for="prod in ProductIdList" :key="prod.id">
-                <img src="../assets/carrot.jpg" alt="">
+                <img src="../assets/toy.jpg" alt="">
                 <h1>{{ prod.title }}</h1>
-                <h1>{{ prod.price }} {{ prod.currency }}</h1>
+                <h1>{{ prod.price }} рублей {{ prod.currency }}</h1>
             </div>
             
             <OrderModal

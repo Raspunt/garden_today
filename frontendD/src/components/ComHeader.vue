@@ -6,7 +6,7 @@
 
         <div class="flex-row-header">
         <img class="logo" src="../assets/logo_project2.png" alt="">
-        <h1>Garden Today</h1>
+        <h1>Toyota Today</h1>
         </div>
 
         <div class="left_zone">
